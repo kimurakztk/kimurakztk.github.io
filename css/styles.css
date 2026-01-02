@@ -12811,6 +12811,12 @@ section.resume-section .resume-section-content {
   padding-bottom: 3rem;
 }
 
+#personal {
+  min-height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 
 .rt-item {
   font-size: 1.2rem;
