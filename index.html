@@ -21,10 +21,26 @@
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <!--
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Kazuraka Kimura</span>
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
                     src="assets/img/profile.jpg" alt="..." /></span>
+        </a>
+        -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- スマホ表示（lg未満）: 写真 + 名前 -->
+            <span class="d-flex d-lg-none align-items-center gap-2">
+                <img src="assets/img/profile.jpg" alt="Profile"
+                    style="width:48px;height:48px;object-fit:cover;border-radius:50%;">
+                <span>Kazutaka Kimura</span>
+            </span>
+
+            <!-- PC表示（lg以上）: 従来どおり大きい写真 -->
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg"
+                    alt="Profile" />
+            </span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
