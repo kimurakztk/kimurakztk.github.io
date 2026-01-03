@@ -12906,3 +12906,53 @@ section.resume-section .resume-section-content {
   object-fit: cover;
   border-radius: 50%;
 }
+
+
+.lang-switch a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* アイコン群と言語切り替えの間隔を広げる */
+.lang-switch {
+  margin-top: 1.0rem;
+  /* ここを 1rem / 2rem に調整可 */
+}
+
+
+/* スマホのナビバー上に言語切替を表示 */
+.mobile-lang-switch {
+  position: absolute;
+  top: 1.7rem;
+  /* 位置は好みで微調整 */
+  right: 5.5rem;
+  /* トグルボタンと被らないように */
+  z-index: 1100;
+}
+
+.mobile-lang-switch a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.mobile-lang-switch a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* 言語切り替え（現在表示を含む）は日本語対応フォントを使う */
+.lang-switch,
+.mobile-lang-switch {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  text-transform: none;
+  /* 念のため */
+}
