@@ -32,3 +32,13 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+function switchLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(e => {
+        e.style.display = e.dataset.lang === lang ? 'block' : 'none';
+    });
+}
+
+const lang = new URLSearchParams(location.search).get('lang') || 'en';
+switchLang(lang);
