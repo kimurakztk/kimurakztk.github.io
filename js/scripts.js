@@ -34,11 +34,14 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
+
+
 function switchLang(lang) {
+    localStorage.setItem("lang", lang);
     document.querySelectorAll('[data-lang]').forEach(e => {
         e.style.display = e.dataset.lang === lang ? 'block' : 'none';
     });
 }
 
-const lang = new URLSearchParams(location.search).get('lang') || 'en';
+const lang = localStorage.getItem("lang") || 'en';
 switchLang(lang);
