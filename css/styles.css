@@ -12837,3 +12837,32 @@ section.resume-section .resume-section-content {
   /* Bootstrap標準の青 */
   font-weight: 600;
 }
+
+/* Grant title link */
+.grant-link {
+  color: inherit;
+  /* 既存デザインに合わせる */
+  text-decoration: none;
+  /* 通常時は下線なし */
+  position: relative;
+}
+
+.grant-link::after {
+  content: " ↗";
+  /* 外部リンク感をさりげなく */
+  font-size: 0.85em;
+  opacity: 0.6;
+}
+
+.grant-link:hover {
+  color: var(--bs-primary);
+  /* ホバー時にテーマ色 */
+  text-decoration: underline;
+  /* 下線を出す */
+}
+
+.social-icons {
+  margin-left: 1.6rem;
+  display: flex;
+  gap: 0.9rem;
+}
