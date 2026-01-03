@@ -12799,7 +12799,7 @@ section.resume-section .resume-section-content {
   padding-bottom: 3rem;
 }
 
-#papers {
+#research {
   min-height: auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -12862,7 +12862,40 @@ section.resume-section .resume-section-content {
 }
 
 .social-icons {
-  margin-left: 1.6rem;
+  margin-left: 3.1rem;
   display: flex;
   gap: 0.9rem;
+}
+
+
+
+.navbar-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+
+/*ナビバーにアイコンを出す。*/
+/* Navbar: Scholar / ADS labels */
+#sideNav .social-icon-label {
+  color: rgba(255, 255, 255, 0.75);
+  /* 通常時：落ち着いた白 */
+  text-decoration: none;
+  /* 下線を消す */
+}
+
+#sideNav .social-icon-label i {
+  color: rgba(255, 255, 255, 0.8);
+  /* アイコンも同系色 */
+}
+
+#sideNav .social-icon-label:hover {
+  color: #ffffff;
+  /* ホバー時のみ白 */
+}
+
+#sideNav .social-icon-label:hover i {
+  color: #ffffff;
 }
