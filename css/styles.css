@@ -12899,3 +12899,10 @@ section.resume-section .resume-section-content {
 #sideNav .social-icon-label:hover i {
   color: #ffffff;
 }
+
+.nara-deer {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
