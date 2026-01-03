@@ -12929,7 +12929,7 @@ section.resume-section .resume-section-content {
 /* スマホのナビバー上に言語切替を表示 */
 .mobile-lang-switch {
   position: absolute;
-  top: 1.7rem;
+  top: 1.8rem;
   /* 位置は好みで微調整 */
   right: 5.5rem;
   /* トグルボタンと被らないように */
