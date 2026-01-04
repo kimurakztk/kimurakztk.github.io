@@ -11,6 +11,8 @@
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
+    <link defer rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -42,11 +44,14 @@
                     alt="Profile" />
             </span>
             <!-- スマホだけ表示する言語切り替え（ナビを開かなくても見える） -->
+            <!-- 名前との距離が近くなってしまうのでやめる。 -->
+            <!--
             <div class="mobile-lang-switch d-flex d-lg-none">
                 <a href="javascript:void(0)" onclick="switchLang('en')">EN</a>
                 <span class="mx-1">|</span>
                 <a href="javascript:void(0)" onclick="switchLang('ja')">日本語</a>
             </div>
+            -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -103,7 +108,7 @@
                 </div>
 
                 <!-- 言語切り替え -->
-                <li class="nav-item lang-switch text-center mb-3 d-none d-lg-block">
+                <li class="nav-item lang-switch text-center mb-3">
                     <a href="javascript:void(0)" onclick="switchLang('ja')">日本語</a>
                     <span class="mx-1">|</span>
                     <a href="javascript:void(0)" onclick="switchLang('en')">EN</a>
