@@ -12872,7 +12872,7 @@ section.resume-section .resume-section-content {
   line-height: 1.4;
 }
 
-.talk-item .invited {
+.talk_item .invited {
   color: #0d6efd;
   /* Bootstrap標準の青 */
   font-weight: 600;
@@ -12997,11 +12997,12 @@ section.resume-section .resume-section-content {
   /* 念のため */
 }
 
-.subheading {
-  color: #212529;
-  /* 通常の本文と同じ濃さ */
-}
 
 body {
   color: #000000;
+}
+
+
+.lang-switch span {
+  color: rgba(255, 255, 255, 0.75);
 }

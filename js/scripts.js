@@ -41,7 +41,11 @@ function switchLang(lang) {
     document.querySelectorAll('[data-lang]').forEach(e => {
         e.style.display = e.dataset.lang === lang ? 'block' : 'none';
     });
+
+
 }
 
 const lang = localStorage.getItem("lang") || 'ja';
 switchLang(lang);
+
+
