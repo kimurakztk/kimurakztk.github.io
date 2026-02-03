@@ -43,5 +43,5 @@ function switchLang(lang) {
     });
 }
 
-const lang = localStorage.getItem("lang") || 'en';
+const lang = localStorage.getItem("lang") || 'ja';
 switchLang(lang);

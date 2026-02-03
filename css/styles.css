@@ -127,10 +127,10 @@ h1,
 .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+
 }
 
 h1,
@@ -12648,11 +12648,51 @@ p.lead {
   font-weight: 400;
 }
 
-.subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: none;
+
+
+.subsection {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.subsubsection {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-left: 26px;
+}
+
+.personal_info {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.research_detail {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-left: 25px;
+}
+
+.research_paper {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 1.0rem;
+  padding-left: 25px;
+}
+
+
+.talk_item {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 1.2rem;
+  /* 本文全体を右にずらす量 */
+  padding-left: 50px;
+  /* 最初の行だけ左に戻す */
+  text-indent: -25px;
+
 }
 
 #sideNav {
@@ -12955,4 +12995,13 @@ section.resume-section .resume-section-content {
     "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
   text-transform: none;
   /* 念のため */
+}
+
+.subheading {
+  color: #212529;
+  /* 通常の本文と同じ濃さ */
+}
+
+body {
+  color: #000000;
 }
