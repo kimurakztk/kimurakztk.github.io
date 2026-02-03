@@ -42,10 +42,15 @@ function switchLang(lang) {
         e.style.display = e.dataset.lang === lang ? 'block' : 'none';
     });
 
-
+    // nav のラベルだけ変える
+    document.querySelector('#nav-about').textContent = (lang === 'ja') ? '自己紹介' : 'About';
+    document.querySelector('#nav-career').textContent = (lang === 'ja') ? '職歴' : 'Employment';
+    document.querySelector('#nav-education').textContent = (lang === 'ja') ? '学歴' : 'Education';
+    document.querySelector('#nav-research').textContent = (lang === 'ja') ? '研究' : 'Research';
+    document.querySelector('#nav-grants').textContent = (lang === 'ja') ? '外部獲得資金' : 'Grants';
+    document.querySelector('#nav-talks').textContent = (lang === 'ja') ? '講演' : 'Talks';
+    document.querySelector('#nav-personal').textContent = (lang === 'ja') ? '私について' : 'Personal';
 }
 
 const lang = localStorage.getItem("lang") || 'ja';
 switchLang(lang);
-
-

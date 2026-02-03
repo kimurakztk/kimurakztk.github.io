@@ -9031,6 +9031,13 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-primary_period {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  /* 本文全体を右にずらす量 */
+  padding-left: 25px;
+}
+
 .text-secondary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
@@ -12654,6 +12661,10 @@ p.lead {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 1.5rem;
+  /* 本文全体を右にずらす量 */
+  padding-left: 25px;
+  /* 最初の行だけ左に戻す */
+  text-indent: -25px;
 }
 
 .subsubsection {
