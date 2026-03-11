@@ -52,5 +52,5 @@ function switchLang(lang) {
     document.querySelector('#nav-personal').textContent = (lang === 'ja') ? '私について' : 'Personal';
 }
 
-const lang = localStorage.getItem("lang") || 'ja';
+const lang = localStorage.getItem("lang") || 'en';
 switchLang(lang);
