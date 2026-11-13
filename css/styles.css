@@ -13502,6 +13502,18 @@ body {
   outline-offset: 3px;
 }
 
+/* Extend each entry’s rule through its date when the columns stack. */
+@media (max-width: 767.98px) {
+  :is(#employment, #education, #grants) .flex-shrink-0 {
+    border-left: 2px solid #c9daef;
+    padding: .2rem 0 0 1rem;
+  }
+
+  :is(#employment, #education, #grants) .text-primary_period {
+    padding-left: 0;
+  }
+}
+
 /* Mobile page navigation */
 .menu-toggle {
   display: none;
