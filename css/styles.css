@@ -13370,7 +13370,7 @@ body {
 }
 
 #research .research-content-heading {
-  margin-bottom: 1rem;
+  margin-bottom: .35rem;
 }
 
 #research .research-theme-title {
@@ -13382,6 +13382,7 @@ body {
 }
 #research .subsubsection, #research .research_detail { font-size: 1.05rem; font-weight: 400; }
 #research .research_detail { padding: .4rem 0; max-width: 80ch; }
+#research .research-content-heading + .research_detail { max-width: none; }
 #research .research_paper {
   padding: 0.1rem 0;
   margin: 0;
