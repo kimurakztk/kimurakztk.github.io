@@ -13030,7 +13030,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1050px;
   min-height: 72px;
   margin: 0 auto;
   padding: 0.5rem 2rem;
@@ -13326,6 +13326,12 @@ body {
   width: calc(100% - 4rem);
 }
 
+@media (min-width: 900px) {
+  .home-page .resume-section-content > h2 {
+    font-size: 1.75rem;
+  }
+}
+
 .home-page .subsection {
   font-size: 1.18rem;
 }
@@ -13391,7 +13397,7 @@ body {
 }
 #research .research_paper a { color: var(--bs-link-color); }
 #talks .subsection { font-size: 1.5rem; padding: 1rem 0; text-indent: 0; font-weight: 700; }
-.talk-record { display: grid; grid-template-columns: 10rem 1fr; column-gap: 1rem; padding: 1.2rem 0; border-top: 1px solid #d3deed; }
+.talk-record { display: grid; grid-template-columns: 6.5rem 1fr; column-gap: 1rem; padding: 1.2rem 0; border-top: 1px solid #d3deed; }
 .talk-record .talk-title { grid-column: 2; grid-row: 1; font: 650 1.12rem/1.5 Roboto, sans-serif; }
 .talk-record .talk-venue { grid-column: 2; grid-row: 2; color: #465c78; }
 .talk-record .talk-date { grid-column: 1; grid-row: 1 / span 2; color: #415d80; }
@@ -13405,19 +13411,16 @@ body {
 
 /* Year-by-year presentation archive. Native details also works for local files. */
 .talk-year {
-  margin-bottom: 1rem;
-  border: 1px solid #d3deed;
-  border-radius: 6px;
+  border-top: 1px solid #d3deed;
 }
 
 .talk-year > summary {
-  padding: 0.55rem 1.25rem;
+  padding: .7rem 1rem;
   background: #f0f5fc;
   color: #243750;
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 6px;
 }
 
 .talk-year > summary:hover {
@@ -13430,7 +13433,7 @@ body {
 }
 
 .year-content {
-  padding: 0 1.25rem 1rem;
+  padding: .25rem 1.25rem 1.4rem;
 }
 
 #talks .talk-group {
