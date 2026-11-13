@@ -13560,11 +13560,31 @@ body {
   }
 
   .menu-ready .page-menu {
-    display: none;
+    position: absolute;
+    inset: 100% 0 auto;
+    padding: .5rem 1.25rem;
+    background-color: #0878d1;
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(24, 53, 83, .15);
+    display: flex;
+    visibility: hidden;
+    clip-path: inset(0 0 100%);
   }
 
   .menu-ready:has(.menu-toggle[aria-expanded="true"]) .page-menu {
-    display: flex;
+    visibility: visible;
+    clip-path: inset(0);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .menu-ready .page-menu {
+      transition: clip-path .24s ease-in-out, visibility 0s .24s;
+    }
+
+    .menu-ready:has(.menu-toggle[aria-expanded="true"]) .page-menu {
+      transition-delay: 0s;
+    }
   }
 
   .page-menu a {
