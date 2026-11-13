@@ -18,7 +18,7 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../css/styles.css?v=21" rel="stylesheet" />
+    <link href="../css/styles.css?v=35" rel="stylesheet" />
 
     <link rel="canonical" href="https://kimurakztk.github.io/en/" />
     <link rel="alternate" hreflang="ja" href="https://kimurakztk.github.io/" />
@@ -51,7 +51,7 @@
             <a class="site-brand" href="index.html">
                 <span>Kazutaka Kimura</span>
             </a>
-            <nav class="page-menu" aria-label="Main navigation">
+            <nav id="page-menu" class="page-menu" aria-label="Main navigation">
                 <a href="index.html" class="active" aria-current="page">Home</a>
                 <a href="research.html">Research</a>
                 <a href="talks.html">Talks</a>
@@ -61,18 +61,21 @@
                 <span aria-hidden="true">/</span>
                 <a href="index.html" lang="en" hreflang="en" aria-current="page">EN</a>
             </nav>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="page-menu" aria-label="Menu" hidden>
+                <span aria-hidden="true">☰</span>
+            </button>
         </div>
     </header>
     <main class="site-main">
 <section class="intro-panel" id="about">
-        <div class="intro-name profile-heading"><h1>Kazutaka Kimura</h1><span lang="ja">木村 和貴</span></div>
+        <div class="intro-name profile-heading"><h1>Kazutaka Kimura</h1></div>
         <div class="portrait-frame"><img src="../assets/img/profile.jpg" alt="Kazutaka Kimura" width="120" height="120"></div>
         <div class="intro-copy">
             <p class="profile-introduction">I am a postdoctoral researcher in astrophysics at Tohoku
                     University. I am interested in how our universe evolved and study the formation of stars, black
                     holes, and galaxies in the early Universe.
                     I perform theoretical research using numerical simulations.</p>
-            <a class="contact" href="mailto:kimura.k@astr.tohoku.ac.jp">kimura.k@astr.tohoku.ac.jp</a>
+            Contact: <a class="contact" href="mailto:kimura.k@astr.tohoku.ac.jp">kimura.k@astr.tohoku.ac.jp</a>
         </div>
     </section>
         <hr class="section-divider" />
@@ -121,7 +124,7 @@
                         <div class="subsection">Ph.D. in Science</div>
                         <div class="subsubsection">Kyoto University</div>
                         
-                        <div class="subsubsection">Supervisor : Takashi Hosokawa</div>
+                        <div class="subsubsection">Supervisor: Takashi Hosokawa</div>
                         
                         <div class="subsubsection">Thesis Title: Evolution of the
                             Circumstellar Disk
@@ -140,7 +143,7 @@
                         <div class="subsection">M.S. in Science</div>
                         <div class="subsubsection">Kyoto University</div>
                         
-                        <div class="subsubsection">Supervisor : Takashi Hosokawa</div>
+                        <div class="subsubsection">Supervisor: Takashi Hosokawa</div>
                         
                         <div class="subsubsection">Thesis Title: 初代星形成における星周円盤の進化</div>
                         
@@ -193,5 +196,6 @@
             <a href="https://researchmap.jp/kazutaka_kimura" target="_blank" rel="noopener"><i class="fas fa-id-card" aria-hidden="true"></i><span>researchmap</span></a>
         </div>
     </footer>
+    <script src="../js/scripts.js?v=2" defer></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=21" rel="stylesheet" />
+    <link href="css/styles.css?v=35" rel="stylesheet" />
 
     <link rel="canonical" href="https://kimurakztk.github.io/" />
     <link rel="alternate" hreflang="ja" href="https://kimurakztk.github.io/" />
@@ -51,7 +51,7 @@
             <a class="site-brand" href="index.html">
                 <span>Kazutaka Kimura</span>
             </a>
-            <nav class="page-menu" aria-label="メインメニュー">
+            <nav id="page-menu" class="page-menu" aria-label="メインメニュー">
                 <a href="index.html" class="active" aria-current="page">Home</a>
                 <a href="research.html">研究</a>
 
@@ -62,15 +62,18 @@
                 <span aria-hidden="true">/</span>
                 <a href="en/index.html" lang="en" hreflang="en">EN</a>
             </nav>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="page-menu" aria-label="メニュー" hidden>
+                <span aria-hidden="true">☰</span>
+            </button>
         </div>
     </header>
     <main class="site-main">
 <section class="intro-panel" id="about">
-        <div class="intro-name profile-heading"><h1>木村和貴(<span lang="en">Kazutaka Kimura</span>)</h1></div>
+        <div class="intro-name profile-heading"><h1>木村 和貴 (<span lang="en">Kazutaka Kimura</span>)</h1></div>
         <div class="portrait-frame"><img src="assets/img/profile.jpg" alt="木村 和貴" width="120" height="120"></div>
         <div class="intro-copy">
             <p class="profile-introduction">東北大学で宇宙物理学の研究員をしています。この宇宙がどのようにして現在の姿へと進化してきたのかに関心を持ち、宇宙初期における星・ブラックホール・銀河の形成に興味を持って研究しています。主に数値シミュレーションを用いた理論的研究を行っています。</p>
-            <a class="contact" href="mailto:kimura.k@astr.tohoku.ac.jp">kimura.k@astr.tohoku.ac.jp</a>
+            連絡先: <a class="contact" href="mailto:kimura.k@astr.tohoku.ac.jp">kimura.k@astr.tohoku.ac.jp</a>
         </div>
     </section>
         <hr class="section-divider" />
@@ -115,7 +118,7 @@
                         
                         <div class="subsubsection">京都大学</div>
                         
-                        <div class="subsubsection">指導教員 : 細川 隆史</div>
+                        <div class="subsubsection">指導教員: 細川 隆史</div>
                         
                         <div class="subsubsection">学位論文: Evolution of the
                             Circumstellar Disk
@@ -134,7 +137,7 @@
                         
                         <div class="subsubsection">京都大学</div>
                         
-                        <div class="subsubsection">指導教員 : 細川 隆史</div>
+                        <div class="subsubsection">指導教員: 細川 隆史</div>
                         
                         <div class="subsubsection">学位論文: 初代星形成における星周円盤の進化</div>
                     </div>
@@ -186,5 +189,6 @@
             <a href="https://researchmap.jp/kazutaka_kimura" target="_blank" rel="noopener"><i class="fas fa-id-card" aria-hidden="true"></i><span>researchmap</span></a>
         </div>
     </footer>
+    <script src="js/scripts.js?v=2" defer></script>
 </body>
 </html>
