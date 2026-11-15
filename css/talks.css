@@ -1,0 +1,86 @@
+/* Talks-only layout. Shared site styling is kept in styles.css. */
+.talks-page .site-main { max-width: 980px; }
+#talks .talks-heading { margin-bottom: 2.25rem; }
+#talks .talks-heading h1 { margin: 0 0 .75rem; }
+#talks .talks-heading p { margin: 0; color: #596a7d; font-size: .95rem; }
+#talks .talk-year { border-top: 1px solid #dce3eb; }
+#talks .talk-year:last-child { border-bottom: 1px solid #dce3eb; }
+#talks .talk-year > summary {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  min-height: 4rem;
+  padding: .9rem .25rem;
+  list-style: none;
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#talks .talk-year > summary::-webkit-details-marker { display: none; }
+#talks .talk-year > summary::after {
+  content: '+';
+  margin-left: auto;
+  padding: 0 .5rem;
+  color: #59718e;
+  font: 400 1.35rem/1 sans-serif;
+}
+#talks .talk-year[open] > summary::after { content: '−'; }
+#talks .talk-year > summary:hover { background: #f6f8fb; }
+#talks .year-content { padding: 0 0 1.5rem; }
+#talks .talk-category-group + .talk-category-group { margin-top: 1.5rem; }
+#talks .talk-group {
+  margin: .75rem 0 .25rem;
+  padding: 0 0 .5rem;
+  border-bottom: 1px solid #dce3eb;
+  color: #38607f;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+#talks .talk-record {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 0 1.25rem;
+  border: 0;
+  padding: 1.1rem .25rem;
+}
+#talks .talk-record + .talk-record { border-top: 1px solid #edf0f4; }
+#talks .talk-date {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: .05rem;
+  color: #65758a;
+  font-size: .9rem;
+  font-variant-numeric: tabular-nums;
+}
+#talks .talk-body { grid-column: 2; }
+#talks .talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .2rem .65rem;
+  margin: 0 0 .35rem;
+  color: #65758a;
+  font-size: .78rem;
+  line-height: 1.6;
+}
+#talks .talk-format { color: inherit; white-space: normal; }
+#talks .invited { color: #386c97; font-weight: 600; }
+#talks .talk-title {
+  margin: 0 0 .4rem;
+  color: #243750;
+  font: 500 1.04rem/1.65 Roboto, Arial, sans-serif;
+  overflow-wrap: anywhere;
+}
+#talks .talk-venue { margin: 0; color: #65758a; font-size: .88rem; line-height: 1.7; }
+@media (max-width: 650px) {
+  #talks .talks-heading { margin-bottom: 1.5rem; }
+  #talks .talk-record { grid-template-columns: 2.5rem minmax(0, 1fr); column-gap: .8rem; padding-block: 1rem; }
+  html[lang="en"] #talks .talk-record { grid-template-columns: minmax(0, 1fr); row-gap: .25rem; }
+  html[lang="en"] #talks .talk-body { grid-column: 1; }
+  #talks .talk-title { font-size: 1rem; }
+}
+@media print {
+  #talks .talk-year > .year-content { display: block; }
+  #talks .talk-year > summary::after { content: none; }
+}

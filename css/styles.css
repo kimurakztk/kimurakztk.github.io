@@ -13381,18 +13381,37 @@ body {
 
 #research .research-theme-title {
   margin-bottom: 0.5rem;
+  padding-inline-start: .65rem;
+  border-inline-start: 3px solid #79add9;
   color: inherit;
   font-size: 1.3rem;
   line-height: 1.5;
   font-weight: 600;
 }
 #research .subsubsection, #research .research_detail { font-size: 1.05rem; font-weight: 400; }
-#research .research_detail { padding: .4rem 0; max-width: 80ch; }
-#research .research-content-heading + .research_detail { max-width: none; }
+#research .research_detail { padding: .4rem 0; max-width: none; }
+#research .research-illustration {
+  position: relative;
+  margin: 0 0 .75rem;
+}
+#research .research-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#research .research-illustration figcaption {
+  position: absolute;
+  right: 1%;
+  bottom: 1.5%;
+  color: white;
+  font: 500 clamp(9px, 1vw, 12px)/1.1 Arial, sans-serif;
+}
 #research .research_paper {
   padding: 0.1rem 0;
   margin: 0;
-  max-width: 80ch;
+  max-width: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.45;
 }
 #research .research_paper a { color: var(--bs-link-color); }
@@ -13498,7 +13517,7 @@ body {
 .publication-links a:hover {
   border-color: #0066cc;
   background: #edf4fd;
-  text-decoration-line: underline;
+  text-decoration: none;
 }
 
 .publication-links a:focus-visible {
@@ -13650,4 +13669,51 @@ body {
 
 .research-page .research-topics > :last-child {
   margin-bottom: 0 !important;
+}
+
+#research .research-with-image {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .7fr);
+  align-items: start;
+  gap: 1.5rem;
+}
+#research .research-with-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767.98px) {
+  #research .research-with-image {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .75rem;
+  }
+}
+
+#research .research-figure {
+  margin: 0;
+  min-width: 0;
+}
+#research .research-figure figcaption {
+  margin-top: .5rem;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+/* Justify English research prose, with automatic word hyphenation. */
+html[lang="en"] #research p.research_detail {
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+}
+
+/* Japanese research prose: justify characters while respecting kinsoku rules. */
+html[lang="ja"] #research p.research_detail {
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-character;
+  line-break: strict;
+  word-break: normal;
 }

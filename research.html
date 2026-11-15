@@ -18,7 +18,7 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=60" rel="stylesheet" />
+    <link href="css/styles.css?v=87" rel="stylesheet" />
 
     <link rel="canonical" href="https://kimurakztk.github.io/research.html" />
     <link rel="alternate" hreflang="ja" href="https://kimurakztk.github.io/research.html" />
@@ -48,11 +48,11 @@
 <body id="page-top" class="academic-page">
     <header class="site-header">
         <div class="header-inner">
-            <a class="site-brand" href="index.html">
+            <a class="site-brand" href="ja/index.html">
                 <span>Kazutaka Kimura</span>
             </a>
             <nav id="page-menu" class="page-menu" aria-label="メインメニュー">
-                <a href="index.html">Home</a>
+                <a href="ja/index.html">Home</a>
                 <a href="research.html" class="active" aria-current="page">研究</a>
 
                 <a href="talks.html">講演</a>
@@ -80,11 +80,34 @@
                 <hr class="section-divider research-content-divider" />
                 <div class="research-topics" aria-labelledby="research-content-heading">
                 <h2 class="research-content-heading research-section-title" id="research-content-heading">研究内容</h2>
-                    <p class="research_detail mb-4">これまで主に宇宙初期における星、ブラックホール、銀河などの形成・進化に関する研究を行ってきました。新しい数値計算手法の開発にも取り組みながら、理論モデルや数値シミュレーションを用いて物理過程の解明を目指しています。</p>
-                    <h3 class="research-theme-title" lang="en">・First Star Formation</h3>
-                    <p class="research_detail mb-4">under construction</p>
-                    <h3 class="research-theme-title" lang="en">・Black Hole Formation and Growth in the Early Universe</h3>
-                    <p class="research_detail">under construction</p>
+                    <p class="research_detail research-introduction mb-4">私はこれまで主に宇宙初期における星、ブラックホール、銀河などの形成・進化に関する理論的研究を行ってきました。新しい数値計算手法の開発にも取り組みながら、理論モデルや数値シミュレーションを用いて物理過程の解明を目指しています。</p>
+                    <h3 class="research-theme-title">初代星形成</h3>
+                    <div class="research-with-image mb-4">
+                        <div>
+                            <p class="research_detail mb-2">初代星は、宇宙で最初に形成される星であり、その後の星や銀河、ブラックホールの形成・進化に大きな影響を与えます。私は初代星の周囲に形成されるガス円盤の進化を調べるため、非定常円盤モデルを構築し、3次元数値シミュレーションとの比較を行ってきました。その結果、周囲からの強いガス供給によって円盤が原始星よりも重くなり、初代星形成のごく初期から円盤分裂が普遍的に起こることを明らかにしました[1]。さらに近年は、星形成ガス雲から原始星内部に至る幅広い空間スケールを一貫して計算できる新しい3次元輻射流体計算手法を開発しました[2,3]。この手法を用いて、原始星がガス降着を通じてどのように質量・角運動量・エントロピーを獲得し、進化するのかを調べています<span class="text-nowrap">（図１）</span>。</p>
+                    <div class="mb-4">
+                        <div class="research_paper">[1] <a class="grant-link" href="https://arxiv.org/abs/2012.01452" target="_blank" rel="noopener">Kimura et al. (2021), The Astrophysical Journal, 911, 52</a></div>
+                        <div class="research_paper">[2] <a class="grant-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/acda8e" target="_blank" rel="noopener">Kimura et al. (2023), The Astrophysical Journal, 950, 184</a></div>
+                        <div class="research_paper">[3] <a class="grant-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/ae422a" target="_blank" rel="noopener">Kimura et al. (2026), The Astrophysical Journal, 999, 257</a></div>
+                    </div>
+                        </div>
+                        <figure class="research-figure">
+                            <img src="images/3Dsim.png" alt="初代星形成の3次元数値シミュレーション" width="652" height="703" loading="lazy">
+                            <figcaption>図1: 原始星内部まで分解した初代星形成の3次元輻射流体シミュレーション</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="research-theme-title">宇宙初期におけるブラックホールの形成と成長</h3>
+                    <div class="research-with-image">
+                        <div>
+                            <p class="research_detail mb-2">宇宙初期の観測によって、宇宙誕生後まもない頃に質量の非常に大きな超大質量ブラックホールが存在していたことが明らかになっています。これらの起源を理解するためには、宇宙初期にどのようなブラックホールが形成され、それらがどのように成長するのかを明らかにすることが重要です。私は準解析モデルを用いて、近年の21 cm線観測から示唆されるX線背景放射が、宇宙初期における大質量ブラックホールの形成に与える影響を調べました[4]。さらに近年は、Lyα光子の輻射輸送計算コードを開発し、Lyα輻射圧がブラックホールへのガス降着に与える影響を調べています<span class="text-nowrap">（図２）</span>。これにより、宇宙初期のブラックホールが急速に成長できる条件を明らかにすることを目指しています。</p>
+                            <div class="research_paper">[4] <a class="grant-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/adf2ad" target="_blank" rel="noopener">Kimura et al. (2025), The Astrophysical Journal, 990, 228</a></div>
+                        </div>
+                        <figure class="research-figure">
+                            <img src="images/BHLya.png" alt="ブラックホールとLyα輻射に関する研究図" width="3000" height="3000" loading="lazy">
+                            <figcaption>図2：Lyα輻射輸送を考慮したブラックホール降着流の1次元球対称シミュレーション</figcaption>
+                        </figure>
+                    </div>
+
             </div>
             </div>
         </section>

@@ -18,7 +18,7 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../css/styles.css?v=60" rel="stylesheet" />
+    <link href="../css/styles.css?v=86" rel="stylesheet" />
 
     <link rel="canonical" href="https://kimurakztk.github.io/en/research.html" />
     <link rel="alternate" hreflang="ja" href="https://kimurakztk.github.io/research.html" />
@@ -48,11 +48,11 @@
 <body id="page-top" class="academic-page">
     <header class="site-header">
         <div class="header-inner">
-            <a class="site-brand" href="index.html">
+            <a class="site-brand" href="../index.html">
                 <span>Kazutaka Kimura</span>
             </a>
             <nav id="page-menu" class="page-menu" aria-label="Main navigation">
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="research.html" class="active" aria-current="page">Research</a>
                 <a href="talks.html">Talks</a>
             </nav>
@@ -78,11 +78,34 @@
                 <hr class="section-divider research-content-divider" />
                 <div class="research-topics" aria-labelledby="research-content-heading">
                 <h2 class="research-content-heading research-section-title" id="research-content-heading">Research Topics</h2>
-                    <p class="research_detail mb-4">My research has focused primarily on how stars, black holes, and galaxies formed and evolved in the early universe. I use theoretical models and numerical simulations to understand the underlying physical processes, and I also develop new numerical methods.</p>
-                    <h3 class="research-theme-title" lang="en">・First Star Formation</h3>
-                    <p class="research_detail mb-4">under construction</p>
-                    <h3 class="research-theme-title" lang="en">・Black Hole Formation and Growth in the Early Universe</h3>
-                    <p class="research_detail">under construction</p>
+                    <p class="research_detail research-introduction mb-4">My theoretical research has focused primarily on the formation and evolution of stars, black holes, and galaxies in the early universe. I use theoretical models and numerical simulations to understand the underlying physical processes, and I also develop new numerical methods.</p>
+                    <h3 class="research-theme-title" lang="en">First Star Formation</h3>
+                    <div class="research-with-image mb-4">
+                        <div>
+                            <p class="research_detail mb-2">The first stars form from pristine gas in the early Universe and play an important role in the subsequent formation and evolution of stars, galaxies, and black holes. I developed a time-dependent 1D disk model to study the evolution of circumstellar disks around the first stars and compared its predictions with 3D numerical simulations. I found that strong gas inflows from the surrounding envelope cause the disk to become more massive than the central protostar, leading to ubiquitous disk fragmentation from the earliest stages of first star formation [1]. More recently, I developed a new radiation hydrodynamics scheme capable of resolving a wide range of spatial scales, from star-forming gas clouds down to protostellar interiors [2,3]. Using this scheme, I investigate how protostars acquire mass, angular momentum, and entropy through gas accretion and how this process affects their subsequent evolution <span class="text-nowrap">(Figure 1)</span>.</p>
+                    <div class="mb-4">
+                        <div class="research_paper">[1] <a class="grant-link" href="https://arxiv.org/abs/2012.01452" target="_blank" rel="noopener">Kimura et al. (2021), The Astrophysical Journal, 911, 52</a></div>
+                        <div class="research_paper">[2] <a class="grant-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/acda8e" target="_blank" rel="noopener">Kimura et al. (2023), The Astrophysical Journal, 950, 184</a></div>
+                        <div class="research_paper">[3] <a class="grant-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/ae422a" target="_blank" rel="noopener">Kimura et al. (2026), The Astrophysical Journal, 999, 257</a></div>
+                    </div>
+                        </div>
+                        <figure class="research-figure">
+                            <img src="../images/3Dsim.png" alt="3D numerical simulation of first star formation" width="652" height="703" loading="lazy">
+                            <figcaption>Figure 1: 3D radiation hydrodynamics simulation of first star formation resolving the protostellar interior.</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="research-theme-title" lang="en">Black Hole Formation and Growth in the Early Universe</h3>
+                    <div class="research-with-image">
+                        <div>
+                            <p class="research_detail mb-2">Observations of the early Universe have revealed the existence of supermassive black holes within the first billion years after the Big Bang. To understand their origins, it is essential to investigate the formation and growth of massive black holes in the early Universe. I investigated how the X-ray background suggested by recent 21 cm observations affects the formation of massive black holes using a semi-analytic model and explored the implications for the black hole population observed by JWST [4]. More recently, I have been developing a Lyα radiative transfer code to investigate how Lyα radiation pressure affects gas accretion onto black holes <span class="text-nowrap">(Figure 2)</span>. Through this work, I aim to identify the conditions under which black holes can grow rapidly in the early Universe.</p>
+                            <div class="research_paper">[4] <a class="grant-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/adf2ad" target="_blank" rel="noopener">Kimura et al. (2025), The Astrophysical Journal, 990, 228</a></div>
+                        </div>
+                        <figure class="research-figure">
+                            <img src="../images/BHLya.png" alt="Research illustration of black holes and Lyα radiation" width="3000" height="3000" loading="lazy">
+                            <figcaption>Figure 2: 1D spherically symmetric simulation of a black hole accretion flow including Lyα radiative transfer.</figcaption>
+                        </figure>
+                    </div>
+
             </div>
             </div>
         </section>
